@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="dki.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Đăng Ký</h2>
+      <input type="text" id="user" placeholder="Tên người dùng" /><br />
+      <input type="password" id="password" placeholder="Mật khẩu" /><br />
+      <input type="email" id="email" placeholder="Email" />
+      <button onclick="dangKy()">Đăng Ký</button>
+
+      <a href="login.html">Đã có tài khoản? Đăng nhập ngay</a>
+    </div>
+    <script>
+      function dangKy() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let user = document.getElementById("user").value;
+
+        firebase
+          .auth()
+          .createUserWithEmailAndPassword(email, password)
+          .then(() => alert("Đăng ký tài khoản thành công!"))
+          .catch((error) => alert("Lỗi đăng ký: " + error.message));
+      }
+    </script>
+  </body>
+</html>

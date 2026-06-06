@@ -1,0 +1,76 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+.container-fluid {
+  margin-right: 100px;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+  font-weight: 700;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+}
+.navbar {
+  padding-top: 0.3px;
+  padding-bottom: 0.3px;
+}
+.container-fluid {
+  margin-right: 1%;
+}
+
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h2 {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: -30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.product-card {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-quantity {
+  display: none;
+  position: absolute;
+  content: "";
+  background-color: red;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+footer p {
+  margin-bottom: 4px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <link rel="stylesheet" href="thanhtoan.css" />
+  </head>
+  <body>
+    <div class="checkout-box">
+      <h1>THÔNG TIN THANH TOÁN</h1>
+      <form id="form" action="xacnhan.html" method="" id="payment-form" onsubmit="return xuLyThongTin()">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">Họ tên</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Họ và tên"
+            />
+
+            <label for="phone">Số điện thoại</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Số điện thoại"
+            />
+
+            <label for="city">Tỉnh/Thành phố</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Tỉnh/thành phố"
+            />
+
+            <label for="ward">Phường</label>
+            <input type="text" name="state" id="ward" placeholder="Phường" />
+
+            <label for="address">Địa chỉ cụ thể</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Địa chỉ"
+            />
+      
+            <label for="thanh toán">Chọn phương thức thanh toán</label>
+      <select id="chon-phuong-thuc" onchange="xuLyThanhToan()">
+        <option value="">-- Vui lòng chọn --</option>
+        <option value="momo">Ví Momo</option>
+        <option value="nganhang">Chuyển khoản Ngân hàng</option>
+        <option value="tienmat">Tiền mặt</option>
+      </select>
+      <div id="box-momo" class="thong-tin">
+        <p>Quét mã để thanh toán:</p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+          alt="Mã QR Momo"
+        />
+        <p>Nội dung: <b>TEN CUA BAN</b></p>
+      </div>
+      <div id="box-nganhang" class="thong-tin">
+        <h4>Thông tin chuyển khoản</h4>
+        <p>Ngân hàng: <b>MB Bank</b></p>
+        <p>STK: <b style="font-size: 20px">99998888</b></p>
+        <p>Chủ TK: <b>NGUYEN VAN A</b></p>
+      </div>
+    
+         
+            <input type="submit" value="Submit" id="payment-btn" />
+    
+          </select>
+           </div>
+              </div>
+       
+      </form> 
+
+
+    <script src="./payment.js"></script>
+  </body>
+</html>

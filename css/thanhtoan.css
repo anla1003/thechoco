@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.checkout-box {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #28a745;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 50px;
+  text-align: left;
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.thong-tin {
+  display: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#box-momo {
+  background-color: #ffe6ed;
+  color: #a50064;
+}
+#box-nganhang {
+  background-color: #e6f7ff;
+  color: #0056b3;
+}
+img {
+  width: 150px;
+  border-radius: 5px;
+}

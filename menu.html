@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Choco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="trangchu.html">The choco</a>
+        <div class="d-flex gap-2">
+          <a class="btn btn-dark" href="trangchu.html">Trang chủ</a>
+          <a class="btn btn-dark" href="menu.html">Menu</a>
+          <a class="btn btn-dark" href="login.html">Sign in</a>
+          <a class="btn btn-dark" href="dangki.html">Sign up</a>
+
+          <a class="cart-btn btn btn-dark" href="cart.html">
+            <span class="cart-quantity"></span>
+            <span class="material-icons">shopping_cart</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <h2 style="margin-top: 80px">NAMA CHOCOLATE</h2>
+
+    <div class="product-grid">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-3">
+            <div id="product-1" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/berry_20v_d185354756354f9fa1edfd9c377244cd_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 1"
+              />
+              <h3>Bitter Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-1"
+                class="btn btn-dark add-cart"
+                data-id="product-1"
+                data-name="Bitter Nama"
+                data-price="175000"
+                data-img="http://product.hstatic.net/1000384470/product/berry_20v_d185354756354f9fa1edfd9c377244cd_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-2" class="product-card">
+              <img
+                src="https://product.hstatic.net/1000384470/product/berry_20v_d185354756354f9fa1edfd9c377244cd_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 2"
+              />
+              <h3>Berry Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-2"
+                class="btn btn-dark add-cart"
+                data-id="product-2"
+                data-name="Berry Nama"
+                data-price="175000"
+                data-img="https://product.hstatic.net/1000384470/product/berry_20v_d185354756354f9fa1edfd9c377244cd_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-3" class="product-card">
+              <img
+                src="http://cdn.hstatic.net/products/1000384470/menueditor_item_382895dfdf824a0eb2b061811b706eee_1747458828257723005_12ed01a4b4604661b0c2951a5e2ac51b_grande.jpeg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 3"
+              />
+              <h3>Banana Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-3"
+                class="btn btn-dark add-cart"
+                data-id="product-3"
+                data-name="Banana Nama"
+                data-price="175000"
+                data-img="http://cdn.hstatic.net/products/1000384470/menueditor_item_382895dfdf824a0eb2b061811b706eee_1747458828257723005_12ed01a4b4604661b0c2951a5e2ac51b_grande.jpeg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-4" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/coconut_20v_2_817a4594134b4f5793efe3b2c0162363_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 4"
+              />
+              <h3>Coconut Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-4"
+                class="btn btn-dark add-cart"
+                data-id="product-4"
+                data-name="Coconut Nama"
+                data-price="175000"
+                data-img="http://product.hstatic.net/1000384470/product/coconut_20v_2_817a4594134b4f5793efe3b2c0162363_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-5" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/cherry_20v_2_6430e01a74cd4619be1a983b553762b1_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 5"
+              />
+              <h3>Cherry Brandy</h3>
+              <p>195,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-5"
+                class="btn btn-dark add-cart"
+                data-id="product-5"
+                data-name="Cherry Brandy"
+                data-price="195000"
+                data-img="http://product.hstatic.net/1000384470/product/cherry_20v_2_6430e01a74cd4619be1a983b553762b1_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-6" class="product-card">
+              <img
+                src="https://cdn.hstatic.net/products/1000384470/menueditor_item_69e7dce77df34a8fa3381ca9d6caee92_1747458098771794436_6b49f52d1dcf413f9e3f5190774468d1_grande.jpeg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 6"
+              />
+              <h3>Floral Nama</h3>
+              <p>205,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-6"
+                class="btn btn-dark add-cart"
+                data-id="product-6"
+                data-name="Floral Nama"
+                data-price="175000"
+                data-img="https://cdn.hstatic.net/products/1000384470/menueditor_item_69e7dce77df34a8fa3381ca9d6caee92_1747458098771794436_6b49f52d1dcf413f9e3f5190774468d1_grande.jpeg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-7" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/img_5775_6712087d8a6e4be6abe00d7e1098854f_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 7"
+              />
+              <h3>Marie Gin Nama</h3>
+              <p>195,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-7"
+                class="btn btn-dark add-cart"
+                data-id="product-7"
+                data-name="Marie Gin Nama"
+                data-price="195000"
+                data-img="http://product.hstatic.net/1000384470/product/img_5775_6712087d8a6e4be6abe00d7e1098854f_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-8" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/lime_20v_89f24c31b10e415a8daaae3b9b80016b_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 8"
+              />
+              <h3>Lime Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-8"
+                class="btn btn-dark add-cart"
+                data-id="product-8"
+                data-name="Lime Nama"
+                data-price="175000"
+                data-img="http://product.hstatic.net/1000384470/product/lime_20v_89f24c31b10e415a8daaae3b9b80016b_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-9" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/b52_20v_2_74d0ee54e0594bef865b9635c9a91606_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 9"
+              />
+              <h3>B52 Nama</h3>
+              <p>195,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-9"
+                class="btn btn-dark add-cart"
+                data-id="product-9"
+                data-name="B52"
+                data-price="195000"
+                data-img="http://product.hstatic.net/1000384470/product/b52_20v_2_74d0ee54e0594bef865b9635c9a91606_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-10" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/b52_20v_2_74d0ee54e0594bef865b9635c9a91606_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 10"
+              />
+              <h3>Irish Whiskey Nama</h3>
+              <p>195,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-10"
+                class="btn btn-dark add-cart"
+                data-id="product-10"
+                data-name="Irish Whiskey Nama"
+                data-price="195000"
+                data-img="http://product.hstatic.net/1000384470/product/b52_20v_2_74d0ee54e0594bef865b9635c9a91606_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-11" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/matcha_20v_1_e1787b9a369f40ea81a8e439318317f2_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 11"
+              />
+              <h3>Matcha Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-11"
+                class="btn btn-dark add-cart"
+                data-id="product-11"
+                data-name="Matcha Nama"
+                data-price="175000"
+                data-img="http://product.hstatic.net/1000384470/product/matcha_20v_1_e1787b9a369f40ea81a8e439318317f2_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div id="product-12" class="product-card">
+              <img
+                src="http://product.hstatic.net/1000384470/product/sweet_20v__028fc908ce9a45759098618b7abe1f15_grande.jpg"
+                class="card-img-top img-fluid"
+                alt="Sản phẩm 12"
+              />
+              <h3>Sweet Nama</h3>
+              <p>175,000</p>
+              <a href="thanhtoan.html" class="btn btn-dark">Mua ngay</a>
+              <button
+                id="add-cart-12"
+                class="btn btn-dark add-cart"
+                data-id="product-12"
+                data-name="Sweet Nama"
+                data-price="175000"
+                data-img="http://product.hstatic.net/1000384470/product/sweet_20v__028fc908ce9a45759098618b7abe1f15_grande.jpg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-2 mt-5">
+      <p><b>CONTACT</b></p>
+      <a href="https://www.instagram.com/lman._w/">INSTAGRAM</a>
+      <a href="https://www.facebook.com/lamyan03/">FACEBOOK</a>
+      <p>HOTLINE +84 933 242 168</p>
+      <p>PR/Collab: contact@thechoco.vn</p>
+      <p>Customer Service: support@thechoco.vn</p>
+      <p>Copyright @ 2023 THECHOCO</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
